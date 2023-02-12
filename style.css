@@ -1,0 +1,88 @@
+body {
+  padding: 10px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRF5lgLtmn4U-QIL1JlHGZgetTmM5FHCZcR7PLIsgy4Lnt_8KeZQ1ZYDqEMwczn_DKRQ4&usqp=CAU");
+  /* background-color: #cccccc; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* main {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "article"
+    "aside"
+    "footer";
+  grid-template-rows: 20vh 70vh 10vh;
+} */
+
+@media (min-width: 500px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "section article aside"
+      "footer footer footer";
+    grid-template-rows: 20vh 70vh 10vh;
+  }
+}
+
+header {
+  grid-area: header;
+  background-color: lemonchiffon;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+header b {
+  color: darkred;
+}
+
+section {
+  display: grid;
+  grid-template-areas: "nav" "image1";
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(19, 19, 52);
+  color: white;
+  border-radius: 25px;
+}
+
+nav h3 {
+  padding-left: 10px;
+}
+
+#img01 {
+  grid-area: image1;
+  height: 200px;
+  width: 300px;
+  padding-left: 200px;
+}
+
+article {
+  grid-area: article;
+  background-color: rgb(53, 82, 133);
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+aside {
+  grid-area: aside;
+  background-color: rgb(19, 19, 52);
+  color: white;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: lemonchiffon;
+  text-align: center;
+  border-radius: 25px;
+}
